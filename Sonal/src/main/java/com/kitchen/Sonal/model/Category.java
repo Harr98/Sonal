@@ -7,8 +7,9 @@ import javax.persistence.Id;
 
 @Entity
 public class Category {
-@Id
-@GeneratedValue(strategy = GenerationType.AUTO)
+//this create primary key and autowire it.
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 
 	private long id;
 	private String name;
